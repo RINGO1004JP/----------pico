@@ -170,6 +170,29 @@ p{
     font-weight: 400;
     font-style: normal;
 }
+.s4t2{
+    position: relative;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    transform: translateY(40%);
+    transform: translateX(-10%);
+}
+.s4t2::before{
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-10%);
+    transform: translateY(20%);
+    color: #f4efd4;
+    font-size: 90px;
+    content: 'recycle';
+    z-index: -1;
+    font-family: "Sacramento", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .s4n1, .s4n2, .s4n3 {
     background-color: aquamarine;
     width: 20vw;
