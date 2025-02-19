@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.1em;
+}
 body{
     background-color: #99E7FD;
     font-family: "Zen Old Mincho", serif;
@@ -16,8 +22,20 @@ body{
     font-style: normal;
   }
   
-p{
-    font-size: large;
+h1{
+    font-size: 48px;
+    font-weight: normal;
+
+} 
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+h3{
+    /* font-size: large;
+     */
+     font-size: 24px;
 }
 .container{
     position: relative;
@@ -27,25 +45,26 @@ p{
 .path-container{
     position: absolute;
     z-index: 2;
-    top: 0px;
-    left: 250px;
+    top: 150px;
+    right: 50%; /* 親要素の右端から中央までの位置に配置 */
+    /* transform: translateX(100%);  */
     width: 489px;
     height: 2209px;
     
 }
 .titleM {
-  height:25vw;
+  height:100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
+  flex-direction: column;/* 縦並びにするにはこうすると楽 */
   align-items: center;
 }
 .titleJ{
     z-index: 5;
 }
 .titleE {
-    height: 10px;
-    position: absolute;
+    margin-top: 10px;
     z-index: 5;
 }
 .fish1{
@@ -57,44 +76,126 @@ p{
     left: 50%;
 }
 .scene2{
-    margin-top: 40vw;
-    align-items: flex-end;
+    /* margin-top: 40vw; */
+    /* align-items: flex-end; */
     position: relative;
+    height: 2500px;
 }
-.s2{
-    float: right;
-    font-size: 24px}
-.s2h1{
-    float: right;
-    font-size: 30px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
+.graph-container{
+    position: absolute;
+    width: 417px;
+    height: 417px;
+    top: 200px;
+    right: 200px;
+    /* background: #000; */
 }
-.s2n1{
+.graph-container img{
+    position: absolute;
+}
+.graph-container p{
+    position: absolute;
+}
+.percent1{
+    top: 200px;
+    left: 300px;
+    font-size: 32px;
+    color: #BC2B2B;
+}
+.percent2{
+    top: 250px;
+    left: 60px;
+    font-size: 32px;
+    color: #FFF;
+}
+.floattext{
+    position: absolute;
+}
+.whitetext{
+    width: 700px;
+    height: 50px;
+    position: absolute;
+    /* 横方向に真ん中に持ってくる */
+    left: 50%;
+    transform:translate(-50%, 0); 
+    background-color: #fff;;
+    
+}
+.whitetext h3{
+    line-height: 50px;
+    margin-left: 20px;
+}
+/* .s2{
+    /* float: right; */
+    /* font-size: 24px} */
+/* .s2h1{ */
+    /* float: right; */
+    /* font-size: 30px; */
+    /* margin-right: 50px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+/* } */ 
+/* .s2n1{
     background-color: aquamarine;
     width: 20vw;
     margin-right: 20px;
+<<<<<<< HEAD
     position: absolute;
 }
 .s2g1{
+=======
+} */
+/* .s2g1{
+>>>>>>> 55573071b8fc682a60bbe887c64b8e43f2aaa1aa
     background-image: url(img/Group\ 5.png);
-}
-.s2n1 p{
+} */
+/* .s2n1 p{
     font-size: 23px;
+} */
+
+.s2t1{
+    top: 120px;
+    right: 100px;
 }
 .s2t2{
-    /* flex-direction: row;
-    margin-right: 100px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  background-color: white;
-  margin-right: 500px;
-  margin-left: 500px;
+    top: 800px;
+    right: 100px;
 }
-.scene3{
+.s2t3{
+    top: 950px;
+    right: 100px;
+}
+.s2t4{
+    top: 1100px;
+}
+.s2t5{
+    top: 1600px;
+    right: 500px;
+}
+
+.highlight{
+    color: #BC2B2B;
+    font-size: 48px;
+}
+.s2t6{
+    top: 1700px;
+    right: 100px;
+}
+.s2t7{
+    top: 2100px;
+}
+.s2img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    right: 170px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/IMG_5219.jpg);
+}
+
+/* .scene3{
     margin-top:0;
     position: relative;
     clear:both;
@@ -124,26 +225,19 @@ p{
   background-color: white;
   margin-right: 500px;
   margin-left: 500px;
-}
+} */
 .scene4 {
-    margin-top: 40vw;
+    /* margin-top: 40vw; */
     position: relative;
     clear: both;
-    flex-direction: column;
-    padding-right: 70px;
+    /* flex-direction: column;
+    padding-right: 70px; */
 }
 .scene4yoko{
     display: flex;
     justify-content: center;
 }
-.scene4yoko2{
-    display: flex;
-    justify-content: center;
-}
-.scene4yoko3{
-    display: flex;
-    justify-content: center;
-}
+
 .s4t1, .s4t2, .s4t3 {
     font-size: 64px;
     
@@ -155,7 +249,7 @@ p{
     font-size: 64px;
     text-align: center;
     transform: translateY(40%);
-    transform: translateX(-10%);
+    transform: translateX(-30%);
 }
 .s4t1::before{
     position: absolute;
@@ -173,12 +267,13 @@ p{
 }
 .s4t2{
     position: relative;
+    margin-top: 200px;
     margin-bottom: 0.2rem;
     font-weight: bold;
     font-size: 64px;
     text-align: center;
     transform: translateY(40%);
-    transform: translateX(-10%);
+    transform: translateX(-30%);
 }
 .s4t2::before{
     position: absolute;
@@ -196,12 +291,13 @@ p{
 }
 .s4t3{
     position: relative;
+    margin-top: 200px;
     margin-bottom: 0.2rem;
     font-weight: bold;
     font-size: 64px;
     text-align: center;
     transform: translateY(40%);
-    transform: translateX(-10%);
+    transform: translateX(-30%);
 }
 .s4t3::before{
     position: absolute;
@@ -218,10 +314,14 @@ p{
     font-style: normal;
 }
 .s4n1, .s4n2, .s4n3 {
-    background-color: aquamarine;
-    width: 20vw;
+    /* background-color: aquamarine; */
+    width: 600px;
     margin-right: 20px;
+<<<<<<< HEAD
     padding-left: 20px;
+=======
+    transform: translateX(-33%);
+>>>>>>> 55573071b8fc682a60bbe887c64b8e43f2aaa1aa
 }
 
 .s4n1 p, .s4n2 p, .s4n3 p {
@@ -347,3 +447,63 @@ p{
 /* 分からないこと
     javaのrotateがそもそも機能しない
     全部右寄りになってしまうaaaa */
+.scene5{
+    margin-top: 200px;
+    height: 2500px;
+    position: relative;
+}
+.s5t1{
+    top: 0px;
+}
+.s5t2{
+    top: 300px;
+    left: 200px;
+}
+.circle{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 80px;
+}
+.circletext1{
+    font-size: 24px;
+}
+.circletext2{
+    font-size: 42px;
+}
+.circletext3{
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.s5h1{
+    top: 900px;
+    left: 300px;
+}
+.s5h2{
+    top: 1300px;
+    left: 700px;
+}
+.s5h3{
+    top: 700px;
+    left: 800px;
+}
+.s5t3{
+    text-align: center;
+    top: 1900px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* ふわっとさせるためのもの */
+.floattext {
+	opacity: 0;
+	transform: translateY(5px);
+	transition: opacity 1.5s, transform 0.5s;
+}.floattext.active {
+	opacity: 1;
+	transform: translateY(0px);
+}
