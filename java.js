@@ -1,5 +1,20 @@
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
-
+window.addEventListener("DOMContentLoaded", async () => {
+  const stagger = 0.05;
+  gsap.utils.toArray(".whitetext").forEach((el) => {
+    gsap.from(el, {
+      x: 128,
+      opacity: 0,
+      duration: 1.5,
+      ease: "power4.out",
+      // スクロールトリガーの設定
+      scrollTrigger: {
+        trigger: ".s2t2", // 対象物
+        start: "top 50%", // トリガーの開始位置
+      },
+    });
+  });
+});  
 // 魚１
 gsap.to(".fish1", {
     motionPath: {
