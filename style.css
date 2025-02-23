@@ -103,9 +103,17 @@ h3{
 }
 .percent2{
     top: 250px;
-    left: 60px;
+    left: 57px;
     font-size: 32px;
     color: #FFF;
+}
+.percent1img{
+    top: 130px;
+    left: 295px;
+}
+.percent2img{
+    top: 170px;
+    left: 33px;
 }
 .floattext{
     position: absolute;
