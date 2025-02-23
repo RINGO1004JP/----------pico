@@ -34,20 +34,39 @@ ScrollTrigger.create({
 gsap.set('.graph2', {autoAlpha: 0}); //初期状態としてopacity: 0;とvisibility: hidden;が指定される
 gsap.to('.graph2', { 
   autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
+  duration: 2,
   scrollTrigger: {
     trigger: '.s2t1', //現在、、海の中が〜が上に来たときに、opacityを1にする
-    start: 'top 20%',
+    start: '.fish1 20%', //スクロールの開始位置
   }
 });
-ggsap.set('.graph2img',{autoAlpha: 0});
-gsap.to('.graph2img', {
+gsap.set('.percent2img,.percent2',{autoAlpha: 0});
+gsap.to('.percent2img,.percent2',{
   autoAlpha: 1,
+  duration: 2,
   scrollTrigger: {
     trigger: '.s2t1',
-    start: 'top 20%',
+    start: '.fish1 20%',
   }
 });
-
+gsap.set('.graph1', {autoAlpha: 0});
+gsap.to('.graph1', {
+  autoAlpha: 1,
+  duration:1,
+  scrollTrigger: {
+    trigger: '.s2t1',
+    start: '.fish1 20%',
+  }
+});
+gsap.set('.percent1img,.percent1',{autoAlpha: 0});
+gsap.to('.percent1img,.percent1',{
+  autoAlpha: 1,
+  duration:1,
+  scrollTrigger: {
+    trigger: '.s2t1',
+    start: '.fish1 20%',
+  }
+});
 // 丸い画像をピン留めさせる
 ScrollTrigger.create({
 
