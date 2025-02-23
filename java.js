@@ -67,6 +67,16 @@ gsap.to('.percent1img,.percent1',{
     start: '.fish1 20%',
   }
 });
+// ペットボトルゆらゆら
+gsap.to(".petb", {
+  x: 200,
+  duration: 2,
+  repeat: -1, // 無限に繰り返し
+  repeatDelay: 0.5, // 繰り返し時に0.5秒の待機,
+  yoyo: true, // 反転
+  rotate:360,
+});
+
 // 丸い画像をピン留めさせる
 ScrollTrigger.create({
 

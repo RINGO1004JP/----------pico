@@ -75,6 +75,11 @@ h3{
     top: 30px;
     left: 50%;
 }
+.petb{
+    top:600px;
+    left: 450px;
+    position: absolute;
+}
 .scene2{
     /* margin-top: 40vw; */
     /* align-items: flex-end; */
