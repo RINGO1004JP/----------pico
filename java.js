@@ -39,7 +39,14 @@ gsap.to('.graph2', {
     start: 'top 20%',
   }
 });
-
+ggsap.set('.graph2img',{autoAlpha: 0});
+gsap.to('.graph2img', {
+  autoAlpha: 1,
+  scrollTrigger: {
+    trigger: '.s2t1',
+    start: 'top 20%',
+  }
+});
 
 // 丸い画像をピン留めさせる
 ScrollTrigger.create({
