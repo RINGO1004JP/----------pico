@@ -120,7 +120,7 @@ sections.forEach((section, i) => {
   ScrollTrigger.create({
     trigger: section,
     start: "top center", 
-    markers: true, // デバッグ用
+    // markers: true, // デバッグ用
     onEnter: () => {
       // 回転しながら画像を変更するアニメ
       gsap.to(".s2img", {
