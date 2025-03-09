@@ -28,7 +28,7 @@ gsap.to(".fish1", {
         start: "top top",
         end: "bottom center",
         scrub: true,
-        markers: true,
+        // markers: true,
     }
 });
 
@@ -42,7 +42,7 @@ ScrollTrigger.create({
     end: "top 80%",
     pin: ".graph-container",
     pinSpacing: true, 
-    markers: true, // デバッグ用
+    // markers: true, // デバッグ用
   });
 
 // 円グラフの1つ目のグラフを表示させる
@@ -102,7 +102,7 @@ ScrollTrigger.create({
     end: "bottom center",
     pin: ".s2img",
     pinSpacing: true, 
-    markers: true, // デバッグ用
+    // markers: true, // デバッグ用
   });
 
   const imageContainer = document.querySelector(".s2img");
